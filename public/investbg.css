@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+html, body {
+  height: 100%;
+}
+/* Define custom CSS variables */
+:root {
+  --btn-bg-color: #ffffff; /* Button background color */
+  --shine-color: rgba(224, 224, 224, 0.5); /* Shiny effect color */
+  --shine-degree: 180deg; /* Shiny effect angle */
+  --shine-duration: 5s; /* Shiny effect duration */
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--btn-bg-color);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Shiny effect */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: 30%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
+  transition: opacity var(--shine-duration) ease-in-out;
+  z-index: 1;
+}
+
+/* Hover effect */
+.btn:hover::before {
+  opacity: 0;
+}
+
+/* Keyframes animation for shine effect */
+@keyframes shine {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Animation effect for btn-anim class */
+.btn-anim::before {
+  animation: shine var(--shine-duration) ease-in-out infinite;
+}
+
+body {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: #171717;
+  color: #000;
+  line-height: 1.6;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  animation: drop 7s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.line:nth-child(1) {
+  margin-left: -25%;
+}
+
+.line:nth-child(1)::after {
+  animation-delay: 2s;
+}
+
+.line:nth-child(3) {
+  margin-left: 25%;
+}
+
+.line:nth-child(3)::after {
+  animation-delay: 2.5s;
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0KSBKVGCWS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0KSBKVGCWS');
+</script>
+    <meta charset="UTF-8">
+    <meta content="THINKINGAI">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/THINK AI.svg" type="image/x-icon">
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-[#1f1f1f]">
+  <header class="relative">
+     <nav
+        class="fixed top-0
+          flex flex-wrap
+          items-center
+          justify-between
+          w-[100vw]
+          py-4
+          md:py-0
+          px-4
+          md:bg-transparent bg-[#1f1f1f] z-10
+          text-lg text-gray-700 
+        "
+      >
+       <div>
+          <a href="#">
+            <img src="./assets/THINK AI.svg" class="w-24 md:w-40" alt="THINKING AI">
+          </a>
+        </div>
+          <img src="./assets/menu.svg" id="menu-button" class="w-10 men cursor-pointer md:hidden block" alt="menu">
+          <i class="fa-solid fa-xmark  clo md:hidden hidden" style="color: #ffffff;" id="menu-button"></i>
+       <div class="tran md:static absolute left-0 top-[-1500px] w-full z-16 md:flex md:items-center md:w-auto" id="menu">
+          <ul
+            class="
+              pt-4
+              text-base text-[#ffff]
+              md:flex
+              md:justify-between 
+              md:pt-0 md:bg-transparent bg-[#1f1f1f] md:w-fit w-[100vw] p-4 z-[-10] md:z-10" 
+          >
+            <li>
+              <a class="md:p-4 py-2 block hover:text-[#A8E726] flex gap-2 items-center" href="#home"
+                ><i class="fa-solid fa-house  block" style="color: #ffffff;"></i>Home</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-[#A8E726] flex gap-2 items-center" href="#vision"
+                ><i class="fa-regular fa-lightbulb  block" style="color: #ffffff;"></i>Our Vision</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-[#A8E726] flex gap-2 items-center" href="#feature"
+                ><img alt="features" class="block" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBUlEQVR4nO3YPWgUQRQA4AkY0dgoKoEUwX+xMTZ21loJxiYQQWxEUtkkRTpRrLQxiCAhWBokopBSrMTKQqwthGihjYUEfwj6yZB3ujmSaJXdCfvBg+HN3PFm75bZtymtA8dypNLhNm6lkqEXnyJ6U6lw3l/DqVSYr2xkPjUdBnATU3iAOTzDEl5GLEVuLtZMxWcGUpNgFF+t9AWXIvK4Kq8dXeO7apEqBZzAu8g/RF9lblv8EtkHnFznotS7kQz9eBFzM5X8TOTyXH8qAUai6AlcjsjjbCSVAtNRdOdvVh1Pp1JYuYHHEX82lEqAw1HwR1ys5M/ifcwdSk2HMTzC7lXmduI+rqSmw97/WLNnY6ppbWLYniOVDhfWeqYqCp7nSCXDfvzELxxMpcKNyol+PZUAW7ALBzCEU1jA54iFyA3Fmrx2S2oSDOL1Go/5dyNWkz8zmJoEfZitFPk0Ht33RUxErmO22nh1fVctUqWAHkzGDb6Y36J0vVFZjLm8pmedi1LvRroeHLN7nQMxxtlYKoXlK57dwduIPM4mU2GHYMdSREcZh6Plm/57FP0mvy3BcbyK3A/sSE2HM/iGa9jadc5cjRv+dGo6DOPoOvNHcG5jq2ptQtrGqmG0jVWDaBurmtjkjdUTjFcaq/HI/bOxqp22sVpJTVK3trFqEm1j1TDaxirV7jeJA3TgQV7aPAAAAABJRU5ErkJggg==" width="16">Features</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-[#A8E726]  flex gap-2 items-center" href="#contact"
+                >
+                <i class="fa-regular fa-address-card  block" style="color: #ffffff;"></i>Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+ 
+  
+  <main id="home">
+    <div class="overlay"></div>
+    <video class="full-screen-video  z-[-10]" autoplay muted loop >
+      <source src="./assets/pexels-google-deepmind-18069236 (2160p) (1) (1) (1).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  
+    <div class="flex  animate__animated animate__slideInUp md:mt-24 mt-48 flex-col gap-12 md:gap-12 h-100% justify-center items-center">
+        <div class="what text-[#ffff] pop md:text-2xl text-sm font-medium  antialiased">What We Do?</div>
+        <div class="what text-[#ffff] mont text-md tex font-bold antialiased text-center las">Thinkable Generative-AI that Makes <br> Idea and Personized Innovation for <br> Everyone</div>
+        <div class="join text-[#E0DFFE] mont text-sm md:text-md font-bold antialiased text-center">Join us</div>
+         <div class="button flex mt-10 justify-center items-center ml-1 gap-20">
+            <a style="text-decoration: none;" href="https://formfacade.com/sm/OMA0h2apQ" class="but1 text-[#1f1f1f]   pop md:text-lg text-xs font-medium antialiased">as Developer
+            </a> <a href="./invest.html" class="but2 text-[#1f1f1f]   pop md:text-lg text-xs font-medium antialiased" style="text-decoration: none;">in Organization
+            </a>  </div>  
+    </div>
+</div>
+<a href="#vision"><i class="fa-solid fa-arrow-down absolute bottom-4 left-[45%] md:hidden block text-center" style="color: #ffffff;background-color: black; border-radius: 50%; padding: 20px"></i>
+</a>
+  </main>
+  
+  <div id="vision" class="vision relative md:top-[15vh] top-[17vh] md:h-[100vh] h-[110vh] md:mb-48 mb-[-10vh] mt-[26vh] md:mt-0">
+    <img src="./assets/dot1.svg" class="z-[-7] absolute" alt="..">
+    <img src="./assets/dot2.svg" class="z-[-7] absolute right-0 bottom-0 md:mb-0 mb-[20vh]" alt="..">
+    <div class="mont text-center text-[#A8E726] font-bold md:text-3xl text-lg">Our Vision</div>
+    
+    <div class="absolute  w-[80vw] h-[50vh] ro h-fit md:top-[20%] top-[10%] ml-[10vw]  flex justify-around items-center md:flex-row flex-col mb-5 md:gap-5 gap-5 animate__animated animate__slideInUp animate__delay-1s"><video width="320" height="320" class="rounded-lg" controls autoplay muted>
+      <source src="./assets/Thinking AI (2).mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+     <div class="relative">
+      <div class="pop ro text-[#ffff] bs md:p-5 p-2 text-justify">Imagine AI that not only processes data but also thinks, reasons, and learns independently. This is the future we're creating at THINKING AI—a world where machines are not just tools but intelligent partners in innovation.</div>
+    </div>  <div class="text-[#ffff] absolute bottom-[-15px] md:bottom-[-10px]  right-0">
+         <div class="flex justify-center items-center flex-col">
+          <div class="md:text-lg text-xs">Ganeshan Sudhakar
+          </div>
+          <div class="text-sm">Founder, ThinkingAI
+          </div>
+
+        </div>
+        </div>
+    </div>
+</div>
+<div id="feature" class="vision relative  md:h-[100vh] h-[80vh] md:mb-36 mb-24 md:mt-0 mt-[20vh] border-t-2 pt-10 border-[#ffffff]">
+    <img src="./assets/dot1.svg" class="z-[-7] absolute" alt="..">
+    <img src="./assets/dot2.svg" class="z-[-7] absolute right-0 bottom-0" alt="..">
+    <div class="mont text-center text-[#A8E726] font-bold md:text-3xl mb-10 md:mb-16 mt-4 text-lg">What Sets Us Apart</div>
+    <div class="bg-[#333333] w-[80%] ro p-5 absolute ml-[10%] animate__animated animate__slideInUp animate__delay-1s">
+        
+      <div class="flex flex-col gap-2 md:gap-4">
+            <div class="flex flex-col gap-2 md:gap-6">
+                <div class="flex  items-center gap-2 pt-2">
+                    <img src="./assets/Ellipse 1.svg" class="w-[9px] md:w-" alt="..">
+                    <div class="text-sm text-[#ffff] md:text-3xl font-semibold">AI Empowered with Human Thought</div>
+                </div>
+                <div class="text-sm md:text-2xl text-[#ffff] font-light ml-5">
+                    Our AI systems go beyond conventional programming, incorporating advanced cognitive processes that enable independent decision-making and problem-solving.
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 md:gap-8">
+                <div class="flex  items-center gap-2 pt-2">
+                    <img src="./assets/Ellipse 1.svg" class="w-[9px] md:w-" alt="..">
+                    <div class="text-sm text-[#ffff] md:text-3xl font-semibold">Continuous Innovation</div>
+                </div>
+                <div class="text-sm md:text-2xl text-[#ffff] font-light ml-5">
+                    We're committed to continuous research and development, pushing the boundaries of what AI can achieve and ensuring that our solutions remain at the forefront of technological advancement.   </div>
+            </div>
+            <div class="flex flex-col gap-2 md:gap-6">
+                <div class="flex  items-center gap-2 pt-2">
+                    <img src="./assets/Ellipse 1.svg" class="w-[9px] md:w-" alt="..">
+                    <div class="text-sm text-[#ffff] md:text-3xl font-semibold">Industry Impact</div>
+                </div>
+                <div class="text-sm md:text-2xl text-[#ffff] font-light ml-5">
+                    From healthcare and finance to manufacturing and beyond, Think AI solutions are tailored to meet the unique challenges of various industries, driving efficiency, productivity, and innovation.   </div>
+        </div>
+    </div>  
+</div>
+  
+
+</div>
+
+<div class="h-[80vh] mt-14 border-t-2 pt-10 border-[#ffffff]" id="contact">
+    <div class="mont text-center text-[#A8E726]  font-bold md:text-3xl text-lg ">Contact us</div>
+    <div class="flex justify-around md:justify-between md:w-[80%] md:ml-[10%] items-center animate__animated animate__slideInUp animate__delay-1s h-[100%] md:flex-row flex-col ">
+        <div class="flex flex-col justify-center items-center  gap-5 md:gap-6">
+            <img src="./assets/bxs_phone-call.svg" class="w-14 md:w-24" alt="..">
+            <div class="text-[#ffff] text-xs md:text-2xl">+91 4256231028</div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 md:gap-6">
+            <img src="./assets/ic_sharp-email.svg" class="w-14 md:w-24" alt="..">
+            <div class="text-[#ffff] text-xs md:text-2xl">support@thinkingai.com</div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 md:gap-6">
+            <img src="./assets/carbon_location-filled.svg" class="w-14 md:w-24" alt="..">
+            <div class="text-[#ffff] text-xs md:text-md text-center">Krishnarajaburam <br>Bangalore India</div>
+        </div>
+    </div>
+
+</div>
+<div class="h-[90vh] relative md:block hidden border-t-2 border-[#ffffff]">
+    <div class="w-[55%] bg-[#333333] h-[90vh] absolute right-0 z-[-2]"></div>
+    <div class="ml-24">
+    <div class="text-[#A8E726] mont font-bold text-7xl">Sign up to get <br> early access</div>
+    <div class="text-[#B0B0B0] text-xl mt-5">Get update about our product on your email, no <br> spam guaranteed we promise ✌️</div>
+    <form action="https://formspree.io/f/mwkgnyzd"
+    method="POST" class="wrapper mt-16">
+      <input type="email" name="email" placeholder="Enter your email" />
+        <button type="submit">
+            Join
+            </svg>
+        </button>
+      </form>
+</div>
+<hr class="border border-[#A8E726] mt-48">
+<div class="w-[80vw] ml-[10vw] flex justify-between mt-5">
+    <div class="text-[#E0DFFE]">© 2023 — Copyright</div>
+    <div class="text-[#E0DFFE]">Privacy Policy</div>
+</div>
+</div>
+</div>
+<div class=" mt-24 relative md:hidden block">
+    <div class="ml-4">
+    <div class="text-[#A8E726] mont font-bold text-2xl">Sign up to get <br> early access</div>
+    <div class="text-[#B0B0B0] text-xs mt-5">Get update about our product on your email, no <br> spam guaranteed we promise ✌️</div>
+    <form action="https://formspree.io/f/mwkgnyzd"
+    method="POST" class="wrapper mt-16">
+        <input type="email" name="email" placeholder="Enter your email" />
+        <button type="submit">
+            Join
+        </button>
+      </form>
+</div>
+<hr class="border w-[100vw] border-[#A8E726] mt-48">
+<div class="w-[80vw] ml-[10vw] flex justify-between mt-5">
+    <div class="text-[#E0DFFE] text-sm">© 2023 — Copyright</div>
+    <div class="text-[#E0DFFE] text-sm">Privacy Policy</div>
+</div>
+</div>
+  <script>
+    const button = document.querySelectorAll('#menu-button');
+const menu = document.querySelector('#menu');
+const clo=document.querySelector(".clo")
+const men=document.querySelector(".men")
+button.forEach(element => {
+  element.addEventListener('click', () => {
+  if(menu.classList.contains('top-[-1500px]')){
+    menu.classList.add('top-11');
+    menu.classList.remove('top-[-1500px]');
+    men.classList.remove("block");
+    men.classList.add("hidden");
+    clo.classList.remove("hidden");
+    clo.classList.add("block");
+
+  }
+  else{
+    menu.classList.remove('top-11');
+    menu.classList.add('top-[-1500px]');
+    clo.classList.remove("block");
+    clo.classList.add("hidden"); 
+    men.classList.remove("hidden");
+    men.classList.add("block");
+  }
+ 
+});
+});
+
+
+  </script>
+</body>
+
+</html>
