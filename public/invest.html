@@ -111,7 +111,36 @@
     <script async
   src="https://js.stripe.com/v3/buy-button.js">
 </script>
-      
+     <script>
+    const button = document.querySelectorAll('#menu-button');
+const menu = document.querySelector('#menu');
+const clo=document.querySelector(".clo")
+const men=document.querySelector(".men")
+button.forEach(element => {
+  element.addEventListener('click', () => {
+  if(menu.classList.contains('top-[-1500px]')){
+    menu.classList.add('top-11');
+    menu.classList.remove('top-[-1500px]');
+    men.classList.remove("block");
+    men.classList.add("hidden");
+    clo.classList.remove("hidden");
+    clo.classList.add("block");
+
+  }
+  else{
+    menu.classList.remove('top-11');
+    menu.classList.add('top-[-1500px]');
+    clo.classList.remove("block");
+    clo.classList.add("hidden"); 
+    men.classList.remove("hidden");
+    men.classList.add("block");
+  }
+ 
+});
+});
+
+
+  </script> 
 <div class="flex mt-6 text-gray-700 justify-center md:mt-10 mt-[60vh] rounded-xl animate__animated animate__slideInUp animate__delay-1s">
   <a style="text-decoration: none;" href="https://buy.stripe.com/00gdRL0eCclgf4Y4gi" class="buti animate__animated animate__slideInUp animate__delay-1s w-[40%] md:w-[15%] text-[#1f1f1f] btn btn-anim text-center  pop md:text-lg text-xs font-medium antialiased">Invest Now
   </a>
